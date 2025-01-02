@@ -1,0 +1,56 @@
+# Ignore WordPress core files (nếu WordPress được gắn từ bên ngoài)
+wordpress/core/
+wordpress/wp-content/uploads/
+
+# Ignore môi trường PHP và các tệp cache
+*.log
+*.php~
+*.swp
+*.swo
+*.bak
+*.tmp
+.DS_Store
+
+# Ignore Docker và các tệp tạm thời của Docker Compose
+.env
+.env.*            # Các file cấu hình môi trường khác
+docker-compose.override.yml
+docker-compose.*.yml
+*.pid             # Process ID files
+*.sock            # Socket files
+
+# Ignore dữ liệu liên quan đến container và volume
+db_data/          # Volume dữ liệu MySQL nếu được mount từ local
+
+# Ignore các tệp tự động tạo của hệ điều hành
+Thumbs.db         # Windows Explorer thumb cache
+ehthumbs.db       # Windows Media Cache
+Icon?             # Icon của macOS
+._*               # File meta của macOS
+
+# Ignore các tệp liên quan đến IDE và editor
+.idea/            # JetBrains IDEs (PhpStorm, WebStorm, etc.)
+.vscode/          # Visual Studio Code
+*.iml             # IntelliJ IDEA project files
+
+# Ignore node_modules nếu có sử dụng Node.js (cho front-end)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Ignore các tệp backup hoặc tạm thời
+*.zip
+*.tar.gz
+*.gz
+*.tmp
+*.bak
+
+# Ignore các thư mục tạm của WordPress
+wordpress/wp-content/cache/
+wordpress/wp-content/backups/
+wordpress/wp-content/upgrade/
+
+# Ignore các tệp nhạy cảm hoặc cá nhân
+credentials.json
+keys.json
