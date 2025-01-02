@@ -31,7 +31,7 @@ my-wordpress-project/
 ### 1. Clone the Repository
 Clone this repository to your local machine:
 ```bash
-git clone <repository_url> my-wordpress-project
+git clone https://github.com/tuanha1305/wp-developer.git my-wordpress-project
 cd my-wordpress-project
 ```
 
